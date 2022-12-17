@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="9dp"
     android:orientation="vertical"
-    tools:context=".MainActivity"
-    android:layout_margin="9dp">
+    tools:context=".MainActivity">
 
     <EditText
         android:id="@+id/editTextTextPersonName2"
@@ -14,116 +14,125 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="client's name"
-        android:inputType="textPersonName"
-         />
-  <RelativeLayout
+        android:inputType="textPersonName" />
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"></RelativeLayout>
+
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:scaleType="centerCrop"
         android:src="@drawable/baner"></ImageView>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Select Currency"
         android:layout_gravity="end"
         android:layout_margin="20dp"
+        android:text="Select Currency"
         android:textSize="18dp"></TextView>
+
     <Spinner
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        ></Spinner>
+        android:layout_height="wrap_content"></Spinner>
+
     <ImageView
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_gravity="center_horizontal"
         android:scaleType="centerCrop"
-        android:src="@drawable/dsadsada"
-        ></ImageView>
+        android:src="@drawable/gurrencu"></ImageView>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-<TextView
-    android:id="@+id/prise1"
-    android:layout_width="wrap_content"
-    android:textStyle="bold"
-    android:layout_height="wrap_content"
-    android:textSize="18dp"
-    android:text="Order prise"
-    android:layout_marginStart="8dp"></TextView>
+
         <TextView
-           android:layout_below="@+id/prise1"
-            android:layout_marginTop="10dp"
+            android:id="@+id/prise1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Order prise"
+            android:textSize="18dp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
             android:id="@+id/prise2"
             android:layout_width="wrap_content"
-            android:textStyle="bold"
             android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:text="0"
-            android:layout_marginStart="40dp"></TextView>
-        <TextView
-            android:layout_marginTop="10dp"
-           android:layout_toRightOf="@+id/prise2"
             android:layout_below="@+id/prise1"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:text="0"
+            android:textSize="20dp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
             android:id="@+id/prise3"
             android:layout_width="wrap_content"
-           android:textStyle="bold"
             android:layout_height="wrap_content"
-            android:textSize="20dp"
+            android:layout_below="@+id/prise1"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/prise2"
             android:text="$"
-            android:layout_marginStart="4dp"></TextView>
+            android:textSize="20dp"
+            android:textStyle="bold"></TextView>
+
         <TextView
             android:id="@+id/prise4"
             android:layout_width="wrap_content"
-            android:textStyle="bold"
             android:layout_height="wrap_content"
-            android:textSize="18dp"
-
+            android:layout_marginStart="160dp"
             android:layout_toRightOf="@+id/prise3"
+
             android:text="Quantity"
-            android:layout_marginStart="160dp"></TextView>
+            android:textSize="18dp"
+            android:textStyle="bold"></TextView>
+
         <Button
-           android:layout_toRightOf="@id/prise2"
-            android:layout_below="@id/prise1"
-            android:layout_marginStart="145dp"
             android:id="@+id/button"
             android:layout_width="50dp"
             android:layout_height="50dp"
+            android:layout_below="@id/prise1"
+            android:layout_marginStart="145dp"
+            android:layout_toRightOf="@id/prise2"
+            android:onClick="IncreaseQuantity"
             android:text="+"
-            android:textSize="20dp"/>
+            android:textSize="20dp" />
 
         <Button
-            android:layout_toRightOf="@id/prise2"
-            android:layout_below="@id/prise1"
-            android:layout_marginStart="215dp"
             android:id="@+id/button2"
-            android:onClick="IncreaseQuantity"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:textSize="20dp"
-            android:text="-" />
+            android:layout_below="@id/prise1"
+
+            android:layout_marginStart="215dp"
+            android:layout_toRightOf="@id/prise2"
+            android:text="-"
+            android:textSize="20dp" />
+
         <TextView
-            android:layout_marginTop="10dp"
-            android:layout_toRightOf="@+id/button"
-            android:layout_below="@+id/prise1"
             android:id="@+id/prise5"
             android:layout_width="wrap_content"
-            android:textStyle="bold"
             android:layout_height="wrap_content"
-            android:textSize="20dp"
+            android:layout_below="@+id/prise1"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/button"
             android:text="0"
-            android:layout_marginStart="4dp"></TextView>
+            android:textSize="20dp"
+            android:textStyle="bold"></TextView>
     </RelativeLayout>
 
     <Button
 
-        android:layout_marginTop="50dp"
         android:id="@+id/button3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
         android:text="To pay" />
 
 
