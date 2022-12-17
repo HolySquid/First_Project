@@ -20,7 +20,12 @@ public class MainActivity extends AppCompatActivity {
     public void IncreaseQuantity(View view) {
         quantity = quantity + 1;
         TextView QuantityTextView = findViewById(R.id.prise5);
-        QuantityTextView.setText("quantity");
+        QuantityTextView.setText(""+quantity);
     }
 
+    public void DecreaseQuintity(View view) {
+        quantity = quantity - 1;
+        TextView QuantityTextView = findViewById(R.id.prise5);
+        QuantityTextView.setText(""+quantity);
+    }
 }
